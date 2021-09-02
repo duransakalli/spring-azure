@@ -1,0 +1,9 @@
+azure:
+  activedirectory:
+    tenant-id: a3024586-211d-4ae3-a913-c5849a46bebc
+    client-id: 8b7b8462-6177-45fb-bdb5-a345baf53ea8
+    client-secret: 4Uq-.IwgWilVpY1A1x2-IID7aLzlOts-8F
+    user-group:
+      allowed-group-names: group1
+server:
+  forward-headers-strategy: native
