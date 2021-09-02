@@ -7,6 +7,9 @@
 
 </head>
 <body>
-<h1 th:text="${welcome}"></h1>
+  <h2>Quotes</h2>
+  <ul th:each="hello : ${hello}">
+    <li th:text="${hello}"></li>
+  </ul>
 </body>
 </html>

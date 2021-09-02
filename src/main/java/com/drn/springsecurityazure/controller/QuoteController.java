@@ -17,7 +17,7 @@ public class QuoteController {
     @GetMapping("/hello")
     @PreAuthorize("hasRole('ROLE_group2')")
     public String getMember(Model model) {
-        model.addAttribute("welcome", "Welcome to the page");
+        model.addAttribute("hello", quoteService.getAllMembers());
         return "hello";
     }
 
@@ -31,7 +31,7 @@ public class QuoteController {
     @GetMapping("/members")
     @PreAuthorize("hasRole('ROLE_group2')")
     public String getMembers(Model model) {
-        model.addAttribute("members" , quoteService.getAllMembers());
+        model.addAttribute("members" , quoteService.getRandomQuote());
         return "members";
     }
 

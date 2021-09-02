@@ -15,8 +15,18 @@ public class QuoteService implements Member {
             "'Mathematics is the key and door to the sciences.' -- Galileo Galilei",
             "'Not everyone will understand your journey. Thats fine. Its not their journey to make sense of. Its yours.' -- Unknown" };
 
-    public List<String> getAllMembers() {
-            return Arrays.asList(quotes);
+    public List<String> getAllMembers(){
+        return Arrays.asList(quotes);
+    }
+
+    public String getRandomQuote() {
+        List<String> listOfQuotes = new ArrayList<>();
+        for(String s : quotes) {
+            String[] mem = s.split("\\--");
+            listOfQuotes.add(mem[0]);            
+        }
+        int index = getRandom(listOfQuotes.size());
+            return listOfQuotes.get(index);
     }
 
     public String getRandomMember() {
