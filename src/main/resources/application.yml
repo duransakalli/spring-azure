@@ -4,4 +4,4 @@ azure:
     client-id: e0a6863c-08a1-4f03-a8f1-52581e844f74
     client-secret: 6V8ea-hgAYZw1jr_UFF-I-6sxR1jViC~41
     user-group:
-      allowed-groups: group2
+      allowed-group-names: group2
